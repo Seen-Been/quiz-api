@@ -43,7 +43,7 @@ async function getAllQuizzesAsync()
     {
         return {
             id: quiz.id,
-            name: quiz.name
+            name: quiz.name.toUpperCase()
         };
     });
     return list;
